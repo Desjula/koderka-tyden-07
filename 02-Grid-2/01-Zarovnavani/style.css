@@ -30,15 +30,19 @@
 
 /* ---------------------------------------------------- */
 
+.kontejner{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 200px);
 
-/*
-Vyzkoušíme si:
-- grid-auto-rows
-- grid-auto-columns
-- posun položky na linii bez určení řady/sloupce (vznikají mezery)
-- grid-auto-flow
-	- row (standard)
-	- column
-	- dense (zabraňuje mezerám)
-- order
-*/
+	justify-content: end;
+	align-content: end;
+	justify-items: start;
+	align-items: start;
+}
+
+.bob{
+	justify-self: center;
+	align-self: center;
+
+}
