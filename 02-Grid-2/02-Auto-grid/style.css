@@ -48,18 +48,33 @@ Vyzkoušíme si:
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(3, 200px);
 	grid-auto-rows: 100px;
+	/*grid-auto-flow: dense; /*Zhuštění položek = zaplnění mezer */
 }
 
 .bob4{
-	grid-column: 4;
-	grid-row: 3;
+	grid-column: 3 / span 3;
+	grid-row: 3 / span 2;
 }
 
 .bob22{
-	grid-row: 2;
-	grid-column: 2;
+	grid-row: span 2;
+	grid-column: 5 / span 2;
 }
 
 .bob10{
-	grid-row: 3 ;
-}
+	grid-column: 4 / span 3 ;
+	
+} 
+
+/*grid-auto-flow: dense;
+	.nejaky-obrazek{
+		grid-row: span 2;
+		grid-column: span 3;
+	}
+
+	.jiny-obrazek{
+		grid-column: span 2;
+	}
+
+	rozlozeni na random jako v pinterestu*/
+ 
